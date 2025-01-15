@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { motion, useTime, useTransform } from "motion/react"
 import { Routes, Route } from 'react-router-dom'
-import './App.css'
 import SharedView from "./SharedView"
 import DetailView from "./DetailView"
 
@@ -27,8 +26,8 @@ function App() {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
-          duration: 0.4,
-          scale: { type: "spring", visualDuration: 0.7, bounce: 0.4 },
+          duration: 1.2,
+          scale: { type: "spring", visualDuration: 0.9, bounce: 0.4 },
         }}
         className="title"
       >
