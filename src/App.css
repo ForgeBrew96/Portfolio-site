@@ -1,8 +1,16 @@
+.HeadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .special-box div {
   background: white;
   border-radius: 30px;
   width: 100px;
   height: 100px;
+  border: solid 2px black;
+  margin-right: 800px;
 }
 
 .portfolio-grid {
@@ -13,31 +21,32 @@
   padding: 30px;
   background-color: rgba(236, 226, 226, 0.795);
   border-radius: 20px;
+  border: solid 4px black;
+  margin-right: 60px;
 }
 
 .pgrids {
- border: 2px solid black;
- border-radius: 20px;
- padding: 60px;
- background: rgb(69, 53, 207)
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 60px;
+  background: rgb(69, 53, 207);
 }
 
-.pgrid-1 {
+.backbtn {
+  color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  background: rgb(69, 53, 207);
+}
+
+.pgrid-1, .pgrid-2, .pgrid-3, .pgrid-4 {
   align-self: center;
   justify-self: center;
 }
 
-.pgrid-2 {
-  align-self: center;
-  justify-self: center;
-}
-
-.pgrid-3 {
-  align-self: center;
-  justify-self: center;
-}
-
-.pgrid-4 {
-  align-self: center;
-  justify-self: center;
+.detailContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
 }
