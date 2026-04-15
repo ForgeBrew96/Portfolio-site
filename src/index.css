@@ -85,6 +85,8 @@ h1 {
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.50);
   background: rgba(68, 53, 207, 0.712);
+  align-self: center;
+  justify-self: center;
 }
 
 .backbtn {
@@ -96,16 +98,10 @@ h1 {
 }
 
 .backbtn:hover {
-  background: linear-gradient(right, white, rgb(204, 202, 202), rgb(145, 142, 142));
-  color:black;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-
-.pgrid-1, .pgrid-2, .pgrid-3, .pgrid-4 {
-  align-self: center;
-  justify-self: center;
+  background: linear-gradient(to top right, rgb(83, 83, 83), rgb(126, 124, 124), rgb(100, 100, 100));
+  transform: translateY(2px);
+  border: none;
+  box-shadow: 0 10px 12px rgba(0,0,0,10);
 }
 
 .detailContainer {

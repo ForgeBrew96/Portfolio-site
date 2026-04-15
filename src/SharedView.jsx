@@ -10,7 +10,7 @@ const SharedView = ({ items, selectedItem, setSelectedItem }) => {
         <div>
             <motion.div
                 initial={{ opacity: 0 }}
-                whileHover={{ scale: 1.01, background: "linear-gradient(#1a6f9f, #9ed2cc)" }}
+                whileHover={{ background: "linear-gradient(to right bottom, #b7e4deff, #9ed2cc)" }}
                 whileInView={{ opacity: 1 }}
                 className="portfolio-grid"
             >
@@ -19,7 +19,7 @@ const SharedView = ({ items, selectedItem, setSelectedItem }) => {
                         key={item.id}
                         href="#"
                         initial={{ scale: 1 }}
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ scale: 0.9 }}
                         whileTap={{ scale: 0.95, backgroundColor: "rgb(34, 16, 202)" }}
                         className={`pgrid-${item.id} pgrids`}
                         onClick={(e) => {
