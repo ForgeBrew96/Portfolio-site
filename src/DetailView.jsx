@@ -18,14 +18,18 @@ const DetailView = ({ selectedItem, setSelectedItem }) => {
           width: "100%",
           gap: "1em",
           flexDirection: "column",
-          backgroundColor: "lightcoral",
+          backgroundColor: "#ffffff",
+          borderRadius: "12px",
+          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.50)",
           borderRadius: "5px",
         }}
       >
        <a href={selectedItem.url} target="_blank" rel="noopener noreferrer">{selectedItem.name} 👈 Click To See More! </a>
        {selectedItem.backendurl ? ( <a href={selectedItem.backendurl} target="_blank" rel="noopener noreferrer">Git - Backend Component 👈 Click To See More! </a> ) : null}
        <p>{selectedItem.description}</p>
-       <button className='backbtn' onClick={() => navigate('/')} style={{ marginTop: "10px" }}> Back </button>
+       <button className='backbtn' onClick={() => navigate('/')} style={{ marginTop: "10px",
+        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.40)",
+        }}> Back </button>
       </motion.div>
     </div>
   )

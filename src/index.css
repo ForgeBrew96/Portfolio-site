@@ -30,12 +30,6 @@ body {
   overflow: hidden;
 }
 
-a {
-  color: white;
-  border: solid 8px rgb(150, 65, 150);
-  border-radius: 8px;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -82,11 +76,15 @@ h1 {
   margin: auto;
 }
 
+.portfolio-grid:hover {
+  border: none;
+}
+
 .pgrids {
-  border: 2px solid black;
   border-radius: 20px;
   padding: 20px;
-  background: rgb(69, 53, 207);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.50);
+  background: rgba(68, 53, 207, 0.712);
 }
 
 .backbtn {
@@ -97,6 +95,14 @@ h1 {
   background: rgb(69, 53, 207);
 }
 
+.backbtn:hover {
+  background: linear-gradient(right, white, rgb(204, 202, 202), rgb(145, 142, 142));
+  color:black;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
 .pgrid-1, .pgrid-2, .pgrid-3, .pgrid-4 {
   align-self: center;
   justify-self: center;
@@ -105,12 +111,27 @@ h1 {
 .detailContainer {
   display: flex;
   flex-direction: column; 
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 0 auto; 
-  width: 100%;
+  width: 60%;
   padding: 0 10px;
   box-sizing: border-box;
+}
+
+.detail {
+  color:black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+a {
+  color:black;
+  font: bold;
+  font-size: 150%;
+  align-self: center;
 }
 
 @media (max-width: 768px) {
@@ -130,7 +151,7 @@ h1 {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
     gap: 1em; 
-    padding: 10px; 
+    padding: 10px;
   }
 
   .pgrids {
