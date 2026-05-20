@@ -1,11 +1,9 @@
-import React from "react"
 import { motion } from "motion/react"
 import { useNavigate } from "react-router-dom"
-import './App.css'
-
-const DetailView = ({ selectedItem, setSelectedItem }) => {
-    if (!selectedItem) return null;
-    const navigate = useNavigate()
+// styles are in index.css
+const DetailView = ({ selectedItem }) => {
+  const navigate = useNavigate()
+  if (!selectedItem) return null;
 
   return (
     <div className="detailContainer">

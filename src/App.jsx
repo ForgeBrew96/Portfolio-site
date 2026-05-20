@@ -20,9 +20,6 @@ function App() {
 
   return (
     <div className="HeadContainer">
-      <div className="special-box">
-        <motion.div style={{ rotate }} />
-      </div>
       <motion.h1
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -40,6 +37,7 @@ function App() {
         <Route path="/detailview" element={<DetailView selectedItem={selectedItem} setSelectedItem={setSelectedItem} />} />
       </Routes>
     </div>
+
   );
 }
 

@@ -1,9 +1,7 @@
-import React from "react"
 import { motion } from "motion/react"
 import { useNavigate } from "react-router-dom"
-import './App.css'
-
-const SharedView = ({ items, selectedItem, setSelectedItem }) => {
+// styles are in index.css
+const SharedView = ({ items, setSelectedItem }) => {
     const navigate = useNavigate()
 
     return (
@@ -19,8 +17,8 @@ const SharedView = ({ items, selectedItem, setSelectedItem }) => {
                         key={item.id}
                         href="#"
                         initial={{ scale: 1 }}
-                        whileHover={{ scale: 0.9 }}
-                        whileTap={{ scale: 0.95, backgroundColor: "rgb(34, 16, 202)" }}
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
                         className={`pgrid-${item.id} pgrids`}
                         onClick={(e) => {
                             e.preventDefault()
@@ -28,7 +26,7 @@ const SharedView = ({ items, selectedItem, setSelectedItem }) => {
                             navigate('/detailview')
                         }}
                     >
-                        {item.name}
+                        <span className="pgrid-label">{item.name}</span>
                     </motion.a>
                 ))}
             </motion.div>
